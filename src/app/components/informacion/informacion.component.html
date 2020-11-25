@@ -1,0 +1,23 @@
+ <body style="margin-top: 20px;">
+     
+
+ <p-card *ngIf="cargar">  
+    <p-header>
+        <h3 style="color: black;">{{title}}</h3>
+    </p-header>
+    <img *ngIf="detalles.Poster !='N/A'" src="{{detalles.Poster}}" style="margin-bottom:10px;">
+    <p style="color: black;"><b>Fecha de estreno: </b>{{detalles.Released}}</p>
+    <p style="color: black;"><b>Duración: </b>{{detalles.Runtime}}</p>
+    <p style="color: black;"><b>Género: </b>{{detalles.Genre}}</p>
+    <p style="color: black;"><b>Director: </b>{{detalles.Director}}</p>
+    <p style="color: black;"><b>Guionista: </b>{{detalles.Writer}}</p>
+    <p style="color: black;"><b>Actores: </b>{{detalles.Actors}}</p>
+    <p style="color: black;"><b>Sipnosis: </b>{{detalles.Plot}}</p>
+    <p style="color: black;"><b>Idioma: </b>{{detalles.Languaje}}</p>
+    <p style="color: black;"><b>Pais: </b>{{detalles.Country}}</p>
+    <p style="color: black;"><b>Premios: </b>{{detalles.Awards}}</p>
+   
+    <button pButton pRipple type="button" label="Back" class="p-button-rounded p-button-info" [routerLink]="['/search']" style="margin-bottom: 20px;"></button>
+</p-card> 
+
+</body>

@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand" style="background-color: #ade4ee;">
+    <div class="collapse navbar-collapse">
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <h5 class="nav" style="color:black;">CINEMA HOME</h5>
+            </li>
+          </ul>
+    </div>
+  </nav>
+
+<p style="margin-top: 20px;">Introduce el nombre de la película:</p>
+<span class="p-input-icon-left" style="margin-bottom: 20px;">
+    <i class="pi pi-search"></i>
+    <input type="text" pInputText placeholder="Search" style="border-color:rgb(116, 167, 224); margin-right: 3px;" [(ngModel)]="name"/>
+    <button pButton pRipple type="button" label="Search" (click)="searchFilm()"></button>
+</span>
+
+<app-titulo-pelicula *ngFor="let info of datosPeliculas" [mostrarTitulo]="info"></app-titulo-pelicula>
+
+
